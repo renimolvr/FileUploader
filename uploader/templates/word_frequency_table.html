@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency Table</title>
+</head>
+<body>
+    <h1>Word Frequency Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Frequency</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for word, frequency in word_freq %}
+                <tr>
+                    <td>{{ word }}</td>
+                    <td>{{ frequency }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

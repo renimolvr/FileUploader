@@ -1,0 +1,19 @@
+<!-- retrieve_corpus.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Corpus</title>
+</head>
+<body>
+    <h1>Retrieve Corpus</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="corpus_id">Enter Corpus ID:</label>
+        <input type="text" id="corpus_id" name="corpus_id">
+        <button type="submit">Retrieve Corpus</button>
+    </form>
+</body>
+</html>
